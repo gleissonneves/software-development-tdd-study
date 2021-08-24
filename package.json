@@ -1,0 +1,22 @@
+{
+  "name": "software-development-tdd-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleissonneves/software-development-tdd-study.git"
+  },
+  "keywords": [
+    "tdd"
+  ],
+  "author": "Gleisson Neves <gleissonneves2017@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gleissonneves/software-development-tdd-study/issues"
+  },
+  "homepage": "https://github.com/gleissonneves/software-development-tdd-study#readme"
+}
