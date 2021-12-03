@@ -7,8 +7,8 @@ describe('toBe matcher', () => {
 describe('Teste de objeto', () => {
     it('Obj 1 é a mesma coisa que o Obj 2', () => {
         let a = {valor: true}
-        let b = a
+        let b = {valor: true}
 
-        expect(a).toBe(b)
+        expect(a).not.toBe(b)
     })
 })
