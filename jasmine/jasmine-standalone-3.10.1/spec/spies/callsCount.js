@@ -1,5 +1,5 @@
 
-describe('Testes do objeto spies - .and.returnValues', function() {
+describe('Testes do objeto spies - .calls.count', function() {
     var calculadora = {
         somar: function(n1 , n2) {
             return n1 + n2;
@@ -10,16 +10,13 @@ describe('Testes do objeto spies - .and.returnValues', function() {
         }
     }
 
-    
-
     beforeAll(function() {
-        spyOn(calculadora, 'somar').and.callFake(function(n1, n2) {
-            return n1 - n2;
-        });
+        spyOn(calculadora, 'somar');
     })
 
     it('Deve transformar o método somar em subtração', function() {
-        expect(calculadora.somar(3, 1)).toEqual(2);
+        calculadora.somar(3, 1)
+        calculadora.somar(3, 1)
+        expect(calculadora.somar.calls.count()).toEqual(2);
     })
-
 })
